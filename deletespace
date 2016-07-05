@@ -1,0 +1,15 @@
+function palindrome(str) {//判断字符串是否回文
+
+  //replace函数去除字符串中所有标点符号和空格
+  // Good luck!
+  str = str.replace(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?\s]/ig,'').toLowerCase();
+  alert(str);
+  var timor = str.split("").reverse().join("");
+  if (timor === str) {
+  	return true;
+  } else{
+  	return false;
+  }
+}
+
+palindrome("eye");
